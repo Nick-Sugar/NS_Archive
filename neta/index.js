@@ -3,7 +3,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
 // AudioContextを生成
 var ctx = new AudioContext();
-
+var bufferSource = ctx.createBufferSource();
 // 指定した音源ファイルをバイナリデータとして取得
 var xml = new XMLHttpRequest();
 xml.responseType = 'arraybuffer';
